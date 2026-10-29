@@ -1,3 +1,5 @@
+
+
 apparati = {}
 
 stati_ammessi = ("OK", "ATTENZIONE", "OFFLINE")
@@ -10,7 +12,7 @@ APPARATI = {
 
 def inserire_apparato(codice: str, nome: str, bus: str, stato: str) -> bool:
 
-    stato_format = stato.upper()
+    stato_format = stato.upper() #Fixed problem
 
     if codice in apparati or stato_format not in stati_ammessi:
         return False
@@ -19,7 +21,7 @@ def inserire_apparato(codice: str, nome: str, bus: str, stato: str) -> bool:
     return True
 
 def aggiorna_stato(codice: str, stato: str) -> bool:
-    stato_format = stato.upper()
+    stato_format = stato.upper() #Fixed problem
 
     if codice not in apparati or stato_format not in stati_ammessi:
         return False
