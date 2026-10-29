@@ -1,6 +1,6 @@
 
 
-apparati = {}
+
 
 stati_ammessi = ("OK", "ATTENZIONE", "OFFLINE")
 
@@ -9,6 +9,8 @@ APPARATI = {
 	"COM-02": {"nome": "Radio comunicazioni", "bus": "BUS-B", "stato": "ATTENZIONE"},
 	"SEN-03": {"nome": "Sensore assetto", "bus": "BUS-A", "stato": "OFFLINE"},
 }
+
+apparati = APPARATI
 
 def inserire_apparato(codice: str, nome: str, bus: str, stato: str) -> bool:
 
